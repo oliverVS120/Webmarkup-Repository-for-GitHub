@@ -1,0 +1,356 @@
+/* Index */
+
+body
+{
+    background-color : blanchedalmond;
+    font-family : Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    opacity: 100;
+}
+ol
+{
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    border: 3px solid #000000;
+    padding: 20px;
+    float: right;
+}
+ul
+{
+    display: inline-block;
+    border: 3px solid #000000;
+    padding: 20px;
+    background-origin: content-box;
+}
+#Cookiestatement {
+    position: fixed;
+    bottom: 0px;
+    right: 25px;
+    padding: 20px 20px 20px 20px;
+    background: rgba(255, 170, 0, .5);
+    border: 3px solid rgba(255, 170, 0, .5);
+    font-size: 26px;
+}
+h1
+{
+    font-size: 32px;
+}
+h2
+{
+    font-size: 24px;
+}
+#Image
+{
+    float: right;
+    position: relative;
+    margin: 30px 0 10px 15px;
+    padding: 10px;
+}
+#Copyright
+{
+    padding: 10px 10px 0 10px;
+    bottom: 0;
+}
+.textwrap
+{
+    padding: 10px 10px 10px 10px;
+    width: 100%
+}
+video
+{
+    display: block;
+    margin: 0 auto;
+    
+}
+img
+{
+    height: auto;
+}
+
+
+@media all and (min-width: 481px)
+{
+    #checkbox
+    {
+        display: none;
+    }
+    #Navigation
+    {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1179px)
+{
+    #Image {
+        float: left;
+        position: relative;
+        margin: 0px 0 10px 15px;
+    }
+    ol {
+        display: inline-block;
+        border: 3px solid #000000;
+        padding: 19pt;
+        float: left;
+    }
+    #imagesfooter {
+        display: block;
+        width: 100%;
+        padding: 0 0 0 20px;
+    }
+}
+@media all and (max-width: 480px)
+{
+    #Texas-Video
+    {
+        display: none;
+    }
+    ul
+    {
+        display: none;
+    }
+    #Navigation
+    {
+        display: inline-flex;
+        border-collapse: collapse;
+        font-size: 25px;
+        color: whitesmoke;
+        background: rgb(13, 152, 186);
+        border: 5px outset rgb(13, 152, 186);
+        position: absolute;
+        top: 33px;
+        right: -311px;
+        flex-direction: column;
+        column-count: 2;
+        column-gap: 50px;
+    }
+    #checkbox {
+        display: inherit;
+        font-size: 25px;
+        color: whitesmoke;
+        background: rgb(13, 152, 186);
+        border: 5px outset rgb(13, 152, 186);
+        position: absolute;
+        top: 15px;
+        right: -330px;
+    }
+}
+
+/* Bestdestinations */
+
+main {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid > section {
+    background: rgb(75, 148, 245);
+    padding: 5px;
+    top: -10px;
+}
+.grid > article > h3 {
+    padding-left: 10px;
+}
+.grid > article > p {
+    padding-left: 10px;
+}
+
+.grid > section > a {
+    float: right;
+    font-size: larger;
+    padding-right: 25px;
+    top: 10px;
+}
+.grid > section > img
+{
+    padding: 10px;
+}
+
+#one
+{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#two
+{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#three
+{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#four
+{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#five
+{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#six
+{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+@media all and (max-width: 1179px)
+{
+    .four
+    {
+        display: none;
+    }
+    .product3
+    {
+        display: none;
+    }
+}
+
+@media all and (max-width: 480px)
+{
+    .six
+    {
+        display: none;
+    }
+    .product3
+    {
+        display: normal;
+    }
+    .grid > section
+    {
+        float: left;
+    }
+}
+
+/* Tickets */
+
+table, th, td
+{
+    border: 3px solid rgb(0, 0, 0);
+}
+
+table > caption
+{
+    font: bold;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#product
+{
+    margin: 10px;
+    background: content-box;
+    background-color: aliceblue;
+}
+
+#product > p
+{
+    display: flex;
+}
+
+#product > img
+{
+    float: left;
+    shape-outside: border-box;
+    width: 50%;
+    height: auto;
+    padding: 21px;
+}
+
+#product > p
+{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px
+}
+
+/* Contact form */
+
+input[type=text], select, textarea
+{
+    border: 1px solid rgb(204, 204, 204);
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=submit]
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(43, 56, 239);
+    color: white;
+    padding: 12px 100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact > label
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+textarea
+{
+    height: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type=submit]:hover
+{
+    background-color: rgb(39, 50, 206);
+}
+
+.contact
+{
+    display: block;
+    border-radius: 5px;
+    background-color:  rgb(131, 187, 255);
+    padding: 20px;
+    border: none;
+}
+
+legend
+{
+    font-size: 25px;
+}
+
+#contactinfo
+{
+    background-color: rgb(59, 159, 204);
+    border: 3px solid rgb(0, 0, 0);
+    margin: 15px
+}
